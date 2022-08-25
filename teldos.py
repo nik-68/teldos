@@ -9,6 +9,11 @@ pink='\033[95m'
 red='\033[91m'
 b='\033[1m'
 ##############
+import os, sys
+import os
+import sys
+import time
+
 os.system("clear")
 
 def logo() :
