@@ -46,7 +46,7 @@ def log(looping_count, sms_number, phone_number):
     return_internet_error = str(sended.count(-1))
 
     print("----------------------------------------------------")
-    print("[-] target : 98 {}".format(phone_number))
+    print("[-] target : +7{}".format(phone_number))
     print("\n\n[*] send: {}/{}    site error: {}    internet error: {}".format(return_200, sms_number, return_error, return_internet_error))
     print("\n[*] all lo0ping script : {}".format(looping_count))
     print("----------------------------------------------------")
@@ -59,7 +59,7 @@ def start():
     clear()
     logo()
     print("\n\n")
-    phone_number = str(input("[+] Enemy number:\n>>+7 "))
+    phone_number = str(input("[+] Enemy number:\n>>+7"))
     sms_number = int(input("[+] Number of sms:\n>>"))
 
     while looping_count <= sms_number:
@@ -67,7 +67,7 @@ def start():
         if sended.count(1) >= sms_number:
             clear()
             log(looping_count, sms_number, phone_number)
-            print("\n[ ] Done, I sent more than {} sms to +98 {}\n".format(sms_number, phone_number ))
+            print("\n[ ] Done, I sent more than {} sms to +7{}\n".format(sms_number, phone_number ))
             break
         
         else:
