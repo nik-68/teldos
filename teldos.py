@@ -1,11 +1,18 @@
 from requests import post , get
 from time import sleep
 from os import system , name
-
-
+#Colour
+yellow='\033[93m'
+gren='\033[92m'
+cyan='\033[96m'
+pink='\033[95m'
+red='\033[91m'
+b='\033[1m'
+##############
+os.system("clear")
 
 def logo() :
- print(color.RED+"""
+print("""\033[93m
 \n
 ██╗██╗     ██╗ █████╗ 
 ██║██║     ██║██╔══██╗
@@ -14,7 +21,7 @@ def logo() :
 ██║███████╗██║██║  ██║
 ╚═╝╚══════╝╚═╝╚═╝  ╚═╝
    Developer : ilia
-"""+color.RED)
+""")
 
 
 class color: 
